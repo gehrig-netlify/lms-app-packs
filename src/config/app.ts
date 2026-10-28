@@ -88,6 +88,9 @@ export const appConfig = {
     // Roles allowed to create/edit/publish courses and view the team
     // progress report. Every signed-in user can take published courses.
     managerRoles: ['admin', 'hr_admin'] as string[],
+    // Who you are whenever sign-in is off (local dev, the public demo): the
+    // dashboard greets this name and progress is recorded against them.
+    demoUser: { name: 'Alex Morgan', email: 'alex.morgan@example.com' },
     welcomeTitle: 'Welcome back',
     welcomeSubtitle: 'Complete your learning checklist to get started.',
     gettingStarted: [
